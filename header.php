@@ -28,7 +28,7 @@
 
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	           
+
 
 	    <title><?php wp_title(); ?></title>
 
@@ -38,22 +38,22 @@
 
 				if($options['favicon'] != '' ){
 
-					echo '<link type="image/x-icon" href="'.get_template_directory_uri().'/assets/favicon.ico" rel="Shortcut Icon">'; 
+					echo '<link type="image/x-icon" href="'.get_template_directory_uri().'/assets/favicon.ico" rel="Shortcut Icon">';
 
-			} ?>          
+			} ?>
 
 	    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link href="http://fonts.googleapis.com/css?family=Anaheim" type="text/css" rel="stylesheet" />
 
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-       
+
 
         <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
 
         <script src='<?php echo get_template_directory_uri();?>/includes/fixed-header.js'></script>
 
-    <!--        
+    <!--
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
 
@@ -71,15 +71,15 @@
 
           href="<?php echo get_template_directory_uri();?>/assets/apple-touch-icon-57-precomposed.png">
 
-    -->   
+    -->
 
      <?php
 
 	$options = get_option('podemoswp_theme_options');
 
-        if($options['analytics'] != '' ){       
+        if($options['analytics'] != '' ){
 
-            echo ($options['analytics']);           
+            echo ($options['analytics']);
 
         }
 
@@ -91,43 +91,43 @@
 
 	<body <?php body_class(); ?>>
 
-     <header>    
+     <header>
 
           <div id="top-header">
 
-              <div class="container">            
+              <div class="container">
                 <div class="textocabecera">
-                 <?php                
+                 <?php
 
                     $options = get_option('podemoswp_theme_options');
 
                     if($options['top-callout'] != '' ){
 
-                        echo ($options['top-callout']);	
+                        echo ($options['top-callout']);
 
                     }
 
                  ?>
-				 
-				  
+
+
 				 </div>
-				 
-				 <?php if( get_theme_mod( 'activar_sociales' ) == '1') : ?>	
+
+				 <?php if( get_theme_mod( 'activar_sociales' ) == '1') : ?>
 				  <div class="redes-sociales">
 				  <a href="<?php echo get_theme_mod( 'social_facebook_url' ); ?>" target="_blank" ><img src="<?php echo get_template_directory_uri();?>/assets/fpng.png"> </a>
-				  <a href="<?php echo get_theme_mod( 'social_twitter_url' ); ?>" target="_blank" ><img src="<?php echo get_template_directory_uri();?>/assets/tpng.png"> </a>	  
+				  <a href="<?php echo get_theme_mod( 'social_twitter_url' ); ?>" target="_blank" ><img src="<?php echo get_template_directory_uri();?>/assets/tpng.png"> </a>
 				  </div>
 				 <?php endif ; ?>
-				  
+
 				  <?php get_template_part('css'); ?>
 
-               
+
 
 				 <div class="header-menu-wrapper">
-  
-                       <?php                        
 
-                        if ( has_nav_menu( 'header-menu' ) ) {                                                
+                       <?php
+
+                        if ( has_nav_menu( 'header-menu' ) ) {
 
                             wp_nav_menu(array(
 
@@ -145,19 +145,19 @@
 
                                 'walker' => new wp_bootstrap_navwalker())
 
-                            );                            
+                            );
 
                         }
 
                         ?>
 
-                    </div> 
+                    </div>
 
-               
+
 
               </div>
 
-          </div>     
+          </div>
 
        <!-- Menu -->
 
@@ -173,19 +173,19 @@
 
                            <?php
 
-                                    $options = get_option('podemoswp_theme_options');                                    
+                                    $options = get_option('podemoswp_theme_options');
 
                                     if($options['logo'] != '' ){
 
-                                        echo '<img src="'.$options['logo'].'" class="img-responsive" alt="'.get_bloginfo( 'name' ).'">';                                       
+                                        echo '<img src="'.$options['logo'].'" class="img-responsive" alt="'.get_bloginfo( 'name' ).'">';
 
-                                    } 
+                                    }
 
-                                    else {                                       
+                                    else {
 
-									    echo '<img src="'.get_template_directory_uri().'/assets/podemos-logo.png" class="img-responsive" alt="'.get_bloginfo( 'name' ).'">';
+									  //  echo '<img src="'.get_template_directory_uri().'/assets/podemos-logo.png" class="img-responsive" alt="'.get_bloginfo( 'name' ).'">';
 
-									} 
+									}
 
                                      ?>
 
@@ -203,15 +203,15 @@
 
                     <span class="icon-bar"></span>
 
-                </button>              
+                </button>
 
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-                <?php                
+                <?php
 
-                if ( has_nav_menu( 'main-menu' ) ) {      
+                if ( has_nav_menu( 'main-menu' ) ) {
 
                     wp_nav_menu( array(
 
@@ -229,15 +229,15 @@
 
                         'walker' => new wp_bootstrap_navwalker())
 
-                    );                        
+                    );
 
                 }
 
                 ?>
 				<div class="apareces">
-				 <?php                        
+				 <?php
 
-                        if ( has_nav_menu( 'header-menu' ) ) {                                                
+                        if ( has_nav_menu( 'header-menu' ) ) {
 
                             wp_nav_menu(array(
 
@@ -255,18 +255,18 @@
 
                                 'walker' => new wp_bootstrap_navwalker())
 
-                            );                            
+                            );
 
                         }
 
                         ?>
-					</div>	
+					</div>
 
             </div><!-- /.navbar-collapse -->
 
             </nav>
 
-        </div><!-- /.container -->    
+        </div><!-- /.container -->
 
        </div>
 

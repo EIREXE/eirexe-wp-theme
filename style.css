@@ -224,7 +224,7 @@ font-size:16px!important;
 
 
 
-/* Blog Widget */ 
+/* Blog Widget */
 
 .allheadwid img {
 width:100%;
@@ -242,7 +242,7 @@ margin-top:10px;
 font-size:28px!important;
 }
 
-/* Content Info */ 
+/* Content Info */
 
 
 div.sidebar-wrapper.homebox1, div.col-3.sidebar-wrapper.homebox1 {
@@ -434,7 +434,7 @@ font-weight: normal;
 
 
 
-/* Redes Sociales en cabecera */ 
+/* Redes Sociales en cabecera */
 
 div.redes-sociales {
 
@@ -453,7 +453,7 @@ margin-left:10px;
 
 
 
-/* Sidebars */ 
+/* Sidebars */
 
 .sidebar-posts .textwidget, .sidebar-page .textwidget {
 padding-left: 0px!important;
@@ -467,7 +467,7 @@ div.sidebar-wrapper, div.col-3.sidebar-wrapper {
 min-height:500px!important;
 }
 
-/* Contradiciendo Bootstrap Responsive */ 
+/* Contradiciendo Bootstrap Responsive */
 
 
 
@@ -500,7 +500,7 @@ div.top-main-menu.fixed {
 position:relative!important;
 }
 
-@media (max-width: 1268px) { 
+@media (max-width: 1268px) {
 
 .boxcont {
 padding: 0px 20px;
@@ -571,7 +571,7 @@ display:none!important;
 display:none!important;
 }
 
-.portada_top { 
+.portada_top {
 height:auto!important;
 }
 
@@ -612,7 +612,7 @@ width: 100%!important;
 
 .form-group button {
 width: 50%!important;
- float:none!important; 
+ float:none!important;
 }
 
 .navbar ul li ul {
@@ -635,7 +635,7 @@ height: auto!important;
 }
 
 .navbar ul.nav li.dropdown:hover ul.dropdown-menu li a {
-   
+
     height: auto!important;
     line-height: 60px!important;
 	color:#000!important;
@@ -717,7 +717,7 @@ width: 100%;
 
 
 
-/* Top Header */ 
+/* Top Header */
 
 .img-responsive {
 	float: left;
@@ -733,20 +733,19 @@ width: 100%;
 	top: 0px;
 	left: 0;
 	padding: 0 5px;
-	background: #282B33 url(assets/circulo-podemos.png) top left no-repeat;
 	background-origin: content-box;
 	padding-left: 5px;
 }
 .header-menu-wrapper {
 	color: #A0A4A9;
 	position:relative!important;
-	
+
 	line-height: 40px;
 	margin: 0px 100px 0px 0px;
 	text-transform: uppercase;
 	float:right!important;
 
-	
+
 }
 #top-header ul, ol {
 	margin-bottom: 0px;
@@ -761,7 +760,7 @@ width: 100%;
 	color: #FFF;
 	transition: all 300ms ease-in-out 0s;
 }
-/* Search Head */ 
+/* Search Head */
 
 
 
@@ -930,12 +929,12 @@ float:right;
 	text-decoration: none;
 	transition: all 300ms ease-in-out 0s;
 }
-/* Comments */ 
+/* Comments */
 
 #comments {
 	margin-top: 50px !important;
 }
-/* meta data */ 
+/* meta data */
 
 .meta {
 }

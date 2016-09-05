@@ -63,17 +63,17 @@ function podemos_theme_customizer( $wp_customize ) {
         'label'      => __('Home type', 'podemoswp'),
         'section'    => 'podemos_portada_section',
         'settings'   => 'blog_info',
-		
+
 		'priority'    => 10,
         'type'       => 'radio',
         'choices'    => array(
             'blog' => 'Blog',
             'info' => 'Info',
-            
+
         ),
     ));
 
-	
+
 //Blog sidebar
 
  $wp_customize->add_setting(
@@ -85,16 +85,16 @@ function podemos_theme_customizer( $wp_customize ) {
         'label'      => __('Blog sidebar', 'podemoswp'),
         'section'    => 'podemos_portada_section',
         'settings'   => 'blog_sidebar',
-		
+
 		'priority'    => 11,
         'type'       => 'radio',
         'choices'    => array(
             'left' => 'Izquierda',
             'right' => 'Derecha',
-            
+
         ),
     ));
-	
+
 //Activar botones sociales
 
 $wp_customize->add_setting(
@@ -108,7 +108,7 @@ $wp_customize->add_setting(
         'section' => 'podemos_social_section',
 		'priority'    => 1,
     )
-);	
+);
 
 //Activar Portada
 
@@ -156,18 +156,18 @@ $wp_customize->add_setting(
         'label'      => __('Homebox1 type', 'podemoswp'),
         'section'    => 'podemos_portada_section',
         'settings'   => 'box1_type',
-		
+
 		'priority'    => 21,
         'type'       => 'radio',
         'choices'    => array(
             'video' => 'Video',
             'texto' => 'Texto',
-            
+
         ),
     ));
 
 
-	
+
 //Activar link en homebox1
 
 
@@ -183,7 +183,7 @@ $wp_customize->add_setting(
 		'priority'    => 30,
     )
 );
-	
+
 
 
 //Imagen Portada
@@ -209,7 +209,7 @@ class Podemos_Textarea_Control extends WP_Customize_Control {
 
 
 
-<?php } } 
+<?php } }
 
 
 //Social Facebook URL
@@ -245,9 +245,9 @@ $wp_customize->add_setting(
     'home_video_url'
 	);
 $wp_customize->add_control(new Podemos_Textarea_Control($wp_customize, 'home_video_url', array(
-	'label' => 'Youtube video ID',
+	'label' => 'Youtube url',
 	'section' => 'podemos_portada_section',
-	'priority'    => 22,
+	'priority'    => 23,
 	'settings' => 'home_video_url',
 )));
 
@@ -622,9 +622,9 @@ function theme_options_init(){
 
 function theme_options_add_page() {
 
-	add_theme_page('Optionen', 'Optionen', 'edit_theme_options', 'theme-optionen', 'podemoswp_options_page' ); 
+	add_theme_page('Optionen', 'Optionen', 'edit_theme_options', 'theme-optionen', 'podemoswp_options_page' );
 
-// Seitentitel, Titel in der Navi, Berechtigung zum Editieren (http://codex.wordpress.org/Roles_and_Capabilities) , Slug, Funktion 
+// Seitentitel, Titel in der Navi, Berechtigung zum Editieren (http://codex.wordpress.org/Roles_and_Capabilities) , Slug, Funktion
 
 }
 
@@ -642,13 +642,13 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
 
 
-<div class="wrap"> 
+<div class="wrap">
 
-<?php screen_icon(); ?><h2>Opciones para <?php bloginfo('name'); ?></h2> 
+<?php screen_icon(); ?><h2>Opciones para <?php bloginfo('name'); ?></h2>
 
 
 
-<?php if ( false !== $_REQUEST['settings-updated'] ) : ?> 
+<?php if ( false !== $_REQUEST['settings-updated'] ) : ?>
 
 <div class="updated fade">
 
@@ -676,7 +676,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
         <td><input id="podemoswp_theme_options[logo]" class="regular-text" type="text" name="podemoswp_theme_options[logo]" value="<?php esc_attr_e( $options['logo'] ); ?>" /></td>
 
-      </tr>  
+      </tr>
 
       <tr valign="top">
 
@@ -684,7 +684,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
         <td><input id="podemoswp_theme_options[favicon]" class="regular-text" type="text" name="podemoswp_theme_options[favicon]" value="<?php esc_attr_e( $options['favicon'] ); ?>" /></td>
 
-      </tr>        
+      </tr>
 
       </tr>
 
@@ -694,7 +694,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
         <td><textarea id="podemoswp_theme_options[footertext]" class="large-text" cols="50" rows="2" name="podemoswp_theme_options[footertext]"><?php esc_attr_e( $options['footertext'] ); ?></textarea></td>
 
-      </tr>  
+      </tr>
 
       <tr valign="top">
 
@@ -708,31 +708,31 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
 	 <th scope="row">¿Uso de Excerpts?</th>
 
-		<td><input id="podemoswp_theme_options[excerpts]" name="podemoswp_theme_options[excerpts]" type="checkbox" value="1" <?php checked( '1', $options['excerpts'] ); ?> />	
+		<td><input id="podemoswp_theme_options[excerpts]" name="podemoswp_theme_options[excerpts]" type="checkbox" value="1" <?php checked( '1', $options['excerpts'] ); ?> />
 
 	</td>
 
-      </tr>     
+      </tr>
 
       <tr>
 
 	 <th scope="row">¿Mostrar Meta Data (Publicado .. por..)? </th>
 
-		<td><input id="podemoswp_theme_options[meta_data]" name="podemoswp_theme_options[meta_data]" type="checkbox" value="1" <?php checked( '1', $options['meta_data'] ); ?> />	
+		<td><input id="podemoswp_theme_options[meta_data]" name="podemoswp_theme_options[meta_data]" type="checkbox" value="1" <?php checked( '1', $options['meta_data'] ); ?> />
 
 	</td>
 
-      </tr> 
+      </tr>
 
       <tr>
 
 	 <th scope="row">¿Mostrar Foto principal en Single Post?</th>
 
-		<td><input id="podemoswp_theme_options[featured_single]" name="podemoswp_theme_options[featured_single]" type="checkbox" value="1" <?php checked( '1', $options['featured_single'] ); ?> />	
+		<td><input id="podemoswp_theme_options[featured_single]" name="podemoswp_theme_options[featured_single]" type="checkbox" value="1" <?php checked( '1', $options['featured_single'] ); ?> />
 
 	</td>
 
-      </tr> 
+      </tr>
 
       <tr valign="top">
 
@@ -740,11 +740,11 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
         <td><textarea id="podemoswp_theme_options[top-callout]" class="large-text" cols="50" rows="2" name="podemoswp_theme_options[top-callout]"><?php esc_attr_e( $options['top-callout'] ); ?></textarea></td>
 
-      </tr>  
+      </tr>
 
     </table>
 
-    
+
 
     <!-- submit -->
 
