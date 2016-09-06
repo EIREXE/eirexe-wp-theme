@@ -44,8 +44,8 @@ html, body {
 	height : 100% !important;
 }
 body {
-	font: 1.3em 'Open Sans' Anaheim, Arial, Helvetica, sans-serif;
-	color: #000;
+	font: 1.3em 'Open Sans', Anaheim, Arial, Helvetica, sans-serif;
+	color: #60676F;
 	background-color: #EAEAEA;
 	max-width: 100% !important;
 }
