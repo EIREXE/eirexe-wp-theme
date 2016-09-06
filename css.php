@@ -1,7 +1,9 @@
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 <style type="text/css">
 
-/* Fondo de página */ 
+/* Fondo de pï¿½gina */
 
 
 
@@ -42,7 +44,7 @@ list-style:none!important;
 
 
 /* Div Portada */
-<?php if( get_theme_mod( 'blog_info' ) == 'blog') : ?>	
+<?php if( get_theme_mod( 'blog_info' ) == 'blog') : ?>
 <?php if( get_theme_mod( 'blog_sidebar' ) == 'left') : ?>
 
 .feat_box {
@@ -139,7 +141,7 @@ padding: 15px 0px;
 }
 
 
- 
+
 .portada_top {
 height: 450px;
 width: 100%;
@@ -152,7 +154,7 @@ background: #A0A4A9 url(<?php echo get_theme_mod( 'portada_podemos' ); ?>) no-re
 background-size: cover;
 }
 
-<?php if( get_theme_mod( 'blog_info' ) == 'blog') : ?>	
+<?php if( get_theme_mod( 'blog_info' ) == 'blog') : ?>
 <?php if( get_theme_mod( 'blog_sidebar' ) == 'left') : ?>
 .portada_presentation {
 overflow: hidden;
@@ -260,14 +262,14 @@ font-size:20px!important;
 var manzana = jQuery.noConflict();
 manzana(document).ready(function(){
     <?php if( get_theme_mod( 'blog_info' ) == 'blog') : ?>
-<?php if( get_theme_mod( 'blog_sidebar' ) == 'left') : ?>	
+<?php if( get_theme_mod( 'blog_sidebar' ) == 'left') : ?>
 	manzana("#feat_box").css({"visibility":"hidden"});
     manzana("#feat_box").css({"margin-right":"-96%"
 	});
-	
+
     manzana("#feat_box").delay("50").show(0);
-	function showtheamazingwelcome() {  
-		manzana("#feat_box").css({"visibility":"visible"});		
+	function showtheamazingwelcome() {
+		manzana("#feat_box").css({"visibility":"visible"});
 		manzana("#feat_box").css({"visibility":"visible"});
    		manzana("#feat_box").animate({"margin-right":
 '8px'
@@ -275,10 +277,10 @@ manzana(document).ready(function(){
 	manzana("#feat_box").css({"visibility":"hidden"});
     manzana("#feat_box").css({"margin-left":"-96%"
 	});
-	
+
     manzana("#feat_box").delay("50").show(0);
-	function showtheamazingwelcome() {  
-		manzana("#feat_box").css({"visibility":"visible"});		
+	function showtheamazingwelcome() {
+		manzana("#feat_box").css({"visibility":"visible"});
 		manzana("#feat_box").css({"visibility":"visible"});
    		manzana("#feat_box").animate({"margin-left":
 '8px'
@@ -288,10 +290,10 @@ manzana(document).ready(function(){
 	manzana("#feat_box").css({"visibility":"hidden"});
     manzana("#feat_box").css({"margin-right":"-96%"
 	});
-	
+
     manzana("#feat_box").delay("50").show(0);
-	function showtheamazingwelcome() {  
-		manzana("#feat_box").css({"visibility":"visible"});		
+	function showtheamazingwelcome() {
+		manzana("#feat_box").css({"visibility":"visible"});
 		manzana("#feat_box").css({"visibility":"visible"});
    		manzana("#feat_box").animate({"margin-right":
 '8px'
@@ -299,10 +301,10 @@ manzana(document).ready(function(){
 
 	}, 1000
 );}
-	 
+
 setTimeout(showtheamazingwelcome, "50")
-	  
-  
-		
+
+
+
 });
 </script>
