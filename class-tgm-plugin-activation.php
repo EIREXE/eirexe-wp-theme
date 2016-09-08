@@ -1432,7 +1432,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
                         }
 
-                        elseif ( ! $source || preg_match( '|^http://wordpress.org/extend/plugins/|', $source ) ) {
+                        elseif ( ! $source || preg_match( '|^https://wordpress.org/extend/plugins/|', $source ) ) {
 
                             $url = add_query_arg(
 
@@ -4433,4 +4433,3 @@ function tgmpa_load_bulk_installer() {
 
 
 }
-

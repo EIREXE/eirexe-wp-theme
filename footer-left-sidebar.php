@@ -40,7 +40,7 @@
 
             <div class="container">
 
-                <div class="row copyright">    
+                <div class="row copyright">
 
                     <div class="col-md-12">
 
@@ -118,7 +118,7 @@
 
 </footer>
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 <?php wp_footer(); ?>
 
