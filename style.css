@@ -13,10 +13,10 @@
 /* Apply bootstrap styles */
 
  @import url('bootstrap/css/bootstrap.min.css');
- @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
- @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ @import url(//fonts.googleapis.com/css?family=Alegreya+Sans+SC);
+ @import url(//fonts.googleapis.com/css?family=Open+Sans);
 
- @import url(https://fonts.googleapis.com/css?family=Anaheim);
+ @import url(//fonts.googleapis.com/css?family=Anaheim);
 @font-face {
 	font-family: 'Alegreya Sans SC';
 	font-style: normal;
